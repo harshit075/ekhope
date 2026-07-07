@@ -22,7 +22,7 @@ export default function Navbar() {
         </a>
         
         {/* Desktop Nav */}
-        <div className="nav-links flex gap-8 items-center hidden md:flex">
+        <div className="nav-links flex gap-4 lg:gap-8 items-center hidden md:flex">
           <a href="#journey" className="nav-link font-medium">Our Story</a>
           <a href="#donate" className="nav-link font-medium">Support</a>
           <a href="#contact" className="nav-link font-medium">Contact</a>
@@ -76,6 +76,7 @@ export default function Navbar() {
           color: var(--text-main);
           transition: color 0.2s ease;
           position: relative;
+          white-space: nowrap;
         }
         .nav-link:hover {
           color: var(--primary);

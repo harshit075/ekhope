@@ -26,7 +26,7 @@ export default function Navbar() {
           <a href="#journey" className="nav-link font-medium">Our Story</a>
           <a href="#donate" className="nav-link font-medium">Support</a>
           <a href="#contact" className="nav-link font-medium">Contact</a>
-          <a href="upi://pay?pa=8305134724@ybl&pn=Ekhope&cu=INR" className="btn btn-primary" style={{ padding: '0.6rem 1.75rem' }}>Donate</a>
+          <a href="upi://pay?pa=8305134724@ybl&pn=Ekhope&cu=INR&am=1100" className="btn btn-primary pulse-btn" style={{ padding: '0.6rem 1.75rem' }}>Donate</a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -48,7 +48,7 @@ export default function Navbar() {
             <a href="#journey" className="text-xl font-medium" onClick={() => setMobileMenuOpen(false)}>Our Story</a>
             <a href="#donate" className="text-xl font-medium" onClick={() => setMobileMenuOpen(false)}>Support</a>
             <a href="#contact" className="text-xl font-medium" onClick={() => setMobileMenuOpen(false)}>Contact</a>
-            <a href="upi://pay?pa=8305134724@ybl&pn=Ekhope&cu=INR" className="btn btn-primary mt-4" onClick={() => setMobileMenuOpen(false)}>Donate Now</a>
+            <a href="upi://pay?pa=8305134724@ybl&pn=Ekhope&cu=INR&am=1100" className="btn btn-primary pulse-btn mt-4" onClick={() => setMobileMenuOpen(false)}>Donate Now</a>
           </div>
         </div>
       )}

@@ -16,7 +16,7 @@ export default function Donation() {
         </p>
         
         <div className="grid md:grid-cols-3 gap-8 text-left mt-8">
-          <div className="card text-center flex-col items-center reveal delay-100">
+          <div className="card text-center flex-col items-center reveal delay-100 card-3d">
             <div className="icon-wrapper mb-6" style={{ padding: '1rem', backgroundColor: 'var(--primary-light)', borderRadius: '50%' }}>
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"></path>
@@ -24,10 +24,10 @@ export default function Donation() {
             </div>
             <h3 className="mb-3 text-xl">One-Time Gift</h3>
             <p className="text-muted mb-6 text-sm" style={{ flexGrow: 1 }}>Make an immediate impact on an animal's life today.</p>
-            <a href="upi://pay?pa=8305134724@ybl&pn=Ekhope&cu=INR" className="btn btn-outline w-full block">Donate Now</a>
+            <a href="upi://pay?pa=8305134724@ybl&pn=Ekhope&cu=INR&am=1100" className="btn btn-outline w-full block">Donate Now</a>
           </div>
           
-          <div className="card text-center flex-col items-center reveal delay-200" style={{ border: '2px solid var(--primary)', transform: 'scale(1.05)', zIndex: 2, position: 'relative' }}>
+          <div className="card text-center flex-col items-center reveal delay-200 card-3d" style={{ border: '2px solid var(--primary)', transform: 'scale(1.05)', zIndex: 2, position: 'relative' }}>
             <div className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full" style={{ position: 'absolute', top: '-12px', right: '10%', backgroundColor: 'var(--primary)', color: 'white', padding: '4px 12px', borderRadius: '9999px', fontSize: '0.75rem', fontWeight: 'bold' }}>RECOMMENDED</div>
             <div className="icon-wrapper mb-6" style={{ padding: '1rem', backgroundColor: 'var(--primary-light)', borderRadius: '50%' }}>
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -36,10 +36,10 @@ export default function Donation() {
             </div>
             <h3 className="mb-3 text-xl">Monthly Sponsor</h3>
             <p className="text-muted mb-6 text-sm" style={{ flexGrow: 1 }}>Provide ongoing support for our daily feeding drives.</p>
-            <a href="upi://pay?pa=8305134724@ybl&pn=Ekhope&cu=INR" className="btn btn-primary w-full block">Sponsor Now</a>
+            <a href="upi://pay?pa=8305134724@ybl&pn=Ekhope&cu=INR&am=1100" className="btn btn-primary w-full block pulse-btn">Sponsor Now</a>
           </div>
           
-          <div className="card text-center flex-col items-center reveal delay-300">
+          <div className="card text-center flex-col items-center reveal delay-300 card-3d">
             <div className="icon-wrapper mb-6" style={{ padding: '1rem', backgroundColor: 'var(--primary-light)', borderRadius: '50%' }}>
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M2 12h4l3-9 5 18 3-9h5"></path>
@@ -47,7 +47,7 @@ export default function Donation() {
             </div>
             <h3 className="mb-3 text-xl">Medical Fund</h3>
             <p className="text-muted mb-6 text-sm" style={{ flexGrow: 1 }}>Help us treat injured and neglected street animals.</p>
-            <a href="upi://pay?pa=8305134724@ybl&pn=Ekhope&cu=INR" className="btn btn-outline w-full block">Contribute</a>
+            <a href="upi://pay?pa=8305134724@ybl&pn=Ekhope&cu=INR&am=1100" className="btn btn-outline w-full block">Contribute</a>
           </div>
         </div>
       </div>

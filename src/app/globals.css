@@ -204,3 +204,44 @@ h1, h2, h3, h4, h5, h6 {
 .h-full { height: 100%; }
 .max-w-4xl { max-width: 56rem; margin-left: auto; margin-right: auto; }
 .mx-auto { margin-left: auto; margin-right: auto; }
+
+/* Dynamic Animations & Effects */
+@keyframes floatAnim {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+.floating-element {
+  animation: floatAnim 4s ease-in-out infinite;
+}
+
+@keyframes pulseAnim {
+  0% { box-shadow: 0 0 0 0 rgba(var(--primary-rgb), 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(var(--primary-rgb), 0); }
+  100% { box-shadow: 0 0 0 0 rgba(var(--primary-rgb), 0); }
+}
+.pulse-btn {
+  animation: pulseAnim 2s infinite;
+}
+
+.text-gradient-animated {
+  background: linear-gradient(45deg, var(--primary), #e67e22, var(--secondary));
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: gradientShift 3s ease infinite;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.card-3d {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+}
+.card-3d:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}

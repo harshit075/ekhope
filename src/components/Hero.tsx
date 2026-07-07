@@ -11,18 +11,22 @@ export default function Hero() {
       <div className="hero-background"></div>
       
       <div className="container relative z-10 text-center flex-col items-center gap-6 glass-panel reveal" style={{ padding: '4rem 2rem', maxWidth: '800px', marginTop: '60px' }}>
-        <div className="badge mb-2">Non-Profit Rescue Organization</div>
-        <h1 className="hero-title text-secondary">
-          The Voice of the <br /> <span className="text-primary">Voiceless</span>
-        </h1>
-        <p className="hero-subtitle text-muted mt-2 font-serif">
-          Giving a powerful voice to the voiceless and creating a kinder world, one rescue at a time. Join us in our journey of compassion.
-        </p>
-        <div className="mt-6 flex justify-center gap-4 flex-wrap">
-          <a href="#donate" className="btn btn-primary">Donate Now</a>
-          <a href="#journey" className="btn btn-secondary">Our Journey</a>
+          <h1 className="text-secondary mb-6 reveal" style={{ fontSize: 'clamp(3rem, 8vw, 5.5rem)', lineHeight: 1.1, letterSpacing: '-0.03em' }}>
+            Voice of the <br/>
+            <span className="text-gradient-animated" style={{ fontWeight: 800 }}>Voiceless</span>
+          </h1>
+          <p className="text-secondary text-lg md:text-xl mb-10 max-w-2xl mx-auto reveal delay-100 opacity-90" style={{ lineHeight: 1.6, fontWeight: 500 }}>
+            Creating a kinder world, one rescue at a time. Join our community movement in Indore to feed, protect, and nurture street animals.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center reveal delay-200">
+            <a href="#donate" className="btn btn-primary text-lg pulse-btn" style={{ padding: '0.8rem 2.5rem' }}>Donate Now</a>
+            <a href="#journey" className="btn btn-outline text-lg bg-white/50" style={{ padding: '0.8rem 2.5rem', backdropFilter: 'blur(4px)' }}>Our Journey</a>
+          </div>
         </div>
-      </div>
+        
+        {/* Floating Abstract Element */}
+        <div className="floating-element absolute top-20 right-10 md:right-20 w-32 h-32 md:w-48 md:h-48 rounded-full bg-primary/20 blur-3xl z-0 pointer-events-none"></div>
+        <div className="floating-element absolute bottom-20 left-10 md:left-20 w-40 h-40 md:w-64 md:h-64 rounded-full bg-secondary/10 blur-3xl z-0 pointer-events-none" style={{ animationDelay: '1s' }}></div>
       
       <style jsx>{`
         .hero-section {

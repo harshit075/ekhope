@@ -18,9 +18,21 @@ export default function Hero() {
           <p className="text-secondary text-lg md:text-xl mb-10 max-w-2xl mx-auto reveal delay-100 opacity-90" style={{ lineHeight: 1.6, fontWeight: 500 }}>
             Creating a kinder world, one rescue at a time. Join our community movement in Indore to feed, protect, and nurture street animals.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center reveal delay-200">
-            <a href="upi://pay?pa=8305134724@ybl&pn=Ekhope&cu=INR&am=1100" className="btn btn-primary text-lg pulse-btn" style={{ padding: '0.8rem 2.5rem' }}>Donate Now</a>
-            <a href="#journey" className="btn btn-outline text-lg bg-white/50" style={{ padding: '0.8rem 2.5rem', backdropFilter: 'blur(4px)' }}>Our Journey</a>
+          <div className="flex flex-wrap gap-4 justify-center reveal delay-200" style={{ position: 'relative', zIndex: 30 }}>
+            <button 
+              onClick={() => { window.location.href = "upi://pay?pa=8305134724@ybl&pn=Ekhope&cu=INR&am=1100"; }}
+              className="btn btn-primary text-lg pulse-btn" 
+              style={{ padding: '0.8rem 2.5rem' }}
+            >
+              Donate Now
+            </button>
+            <button 
+              onClick={() => { document.getElementById('journey')?.scrollIntoView({ behavior: 'smooth' }); }}
+              className="btn btn-outline text-lg bg-white/50" 
+              style={{ padding: '0.8rem 2.5rem', backdropFilter: 'blur(4px)' }}
+            >
+              Our Journey
+            </button>
           </div>
         </div>
         

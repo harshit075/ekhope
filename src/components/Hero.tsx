@@ -19,7 +19,7 @@ export default function Hero() {
             Creating a kinder world, one rescue at a time. Join our community movement in Indore to feed, protect, and nurture street animals.
           </p>
           <div className="flex flex-wrap gap-4 justify-center reveal delay-200">
-            <a href="#donate" className="btn btn-primary text-lg pulse-btn" style={{ padding: '0.8rem 2.5rem' }}>Donate Now</a>
+            <a href="upi://pay?pa=8305134724@ybl&pn=Ekhope&cu=INR&am=1100" className="btn btn-primary text-lg pulse-btn" style={{ padding: '0.8rem 2.5rem' }}>Donate Now</a>
             <a href="#journey" className="btn btn-outline text-lg bg-white/50" style={{ padding: '0.8rem 2.5rem', backdropFilter: 'blur(4px)' }}>Our Journey</a>
           </div>
         </div>
